@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGURAS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     <div class="contenedor">
+
+        <h1>Creador de figuras</h1>
+
+        <p>Selecciona una figura para agregarla a la pantalla</p>
+
+        <div class="controles">
+
+            <select id="figura">
+                <option value="">Selecciona figura</option>
+                <option value="circulo">Círculo</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="triangulo">Triángulo</option>
+            </select>
+
+            <button id="eliminar">Eliminar última</button>
+
+        </div>
+
+        <p id="contador">Figuras: 0 de 5</p>
+
+        <p id="mensaje">Selecciona una figura</p>
+
+        <div id="pantalla">
+            <!-- Aquí aparecerán las figuras -->
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

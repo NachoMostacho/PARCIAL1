@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0% ;
+    padding: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.contenedor {
+    width: 650px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+select,
+button {
+    height: 35px;
+    padding: 0 15px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+button:hover,
+select:hover {
+    background-color: #f1f1f1;
+}
+
+#contador {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#mensaje {
+    min-height: 20px;
+    
+}
+
+.mensaje-error {
+    color: red;
+}
+
+.mensaje-exito {
+    color: black;
+}
+
+#pantalla {
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid #555;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+/* Circulo */
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Cuadrado */
+
+.cuadrado {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+/* Triangulo */
+
+.triangulo {
+    width: 0;
+    height: 0;
+
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid black;
+
+    position: relative;
+}
+
+.triangulo::after {
+    content: "";
+
+    position: absolute;
+
+    top: 2px;
+    left: -38px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-bottom: 67px solid white;
+}
