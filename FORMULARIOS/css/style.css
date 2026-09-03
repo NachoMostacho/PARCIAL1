@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    display: grid;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
